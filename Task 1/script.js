@@ -9,6 +9,7 @@ Pastaba: rezultatas turi būti matomas pateikus formą ir atvaizduojamas
 div elemente su id "output" viduje. Gautus atsakymus stilizuokite naudojant CSS;
 ------------------------------------------------------------------- */
 const form = document.querySelector("form");
+//Create button
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const inputSearchValue = inputSearch.value;
@@ -20,11 +21,12 @@ form.addEventListener("submit", (event) => {
 
   const outputEl = document.getElementById("output");
 
-  //Norint kad būtų tik paskutinis skaičiavimas:
+  //If only the last element is required in the task
   while (outputEl.firstChild) {
     outputEl.removeChild(outputEl.firstChild);
   }
 
+  //Create the elements and fill in the data
   for (const unit in object) {
     const ulEl = document.createElement("ul");
     outputEl.append(ulEl);
