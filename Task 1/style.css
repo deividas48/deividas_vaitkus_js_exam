@@ -22,11 +22,19 @@
   text-transform: uppercase;
 }
 
-form {
+form, #output{
   max-width: 80%;
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
+}
+
+#output{
+  flex-direction:column;
+}
+
+#output ul{
+  list-style-type: none;
 }
 
 #search {
