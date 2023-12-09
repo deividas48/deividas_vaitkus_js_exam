@@ -11,4 +11,10 @@ div elemente su id "output" viduje. Gautus atsakymus stilizuokite naudojant CSS;
 const form = document.querySelector('form');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+    const inputSearchValue = inputSearch.value;
+    const object ={
+        lb: inputSearchValue * 2.2046,
+        g: inputSearchValue / 0.0010000,
+        oz: inputSearchValue * 35.274,
+    }
 });
