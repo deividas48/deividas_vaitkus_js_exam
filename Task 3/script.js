@@ -18,6 +18,7 @@ const btn = document.getElementById("btn");
 btn.addEventListener("click", (event) => {
   event.preventDefault();
   fetchU();
+  document.getElementById("output").textContent = "";
 });
 
 const fetchU = async () => {
@@ -30,4 +31,24 @@ const fetchU = async () => {
   } catch (error) {
     console.error(error);
   }
+};
+
+renderUser = (users) => {
+  users.forEach((user) => {
+    const outputEl = document.getElementById("output");
+
+    const cardEl = document.createElement("figure");
+    outputEl.append(cardEl);
+
+    const imgEl = document.createElement("img");
+    cardEl.append(imgEl);
+    imgEl.classList.add('avatarImg');
+    imgEl.alt = `${user.login} avatar`;
+    imgEl.src = user.avatar_url;
+
+    const paragEl = document.createElement("p");
+    cardEl.append(paragEl);
+    paragEl.classList.add('loginName');
+    paragEl.textContent = user.login;
+  });
 };
