@@ -42,13 +42,13 @@ renderUser = (users) => {
 
     const imgEl = document.createElement("img");
     cardEl.append(imgEl);
-    imgEl.classList.add('avatarImg');
+    imgEl.classList.add("avatarImg");
     imgEl.alt = `${user.login} avatar`;
     imgEl.src = user.avatar_url;
 
     const paragEl = document.createElement("p");
     cardEl.append(paragEl);
-    paragEl.classList.add('loginName');
+    paragEl.classList.add("loginName");
     paragEl.textContent = user.login;
   });
 };

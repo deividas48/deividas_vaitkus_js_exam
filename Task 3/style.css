@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -68,7 +68,7 @@
 
 figure {
   width: 100px;
-  background-color: #474747;;
+  background-color: #474747;
   border-radius: 0.4rem;
   /* display: flex; */
   /* flex-wrap: wrap; */
