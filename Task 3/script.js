@@ -12,3 +12,9 @@ būti stilizuota su CSS ir būti responsive;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'https://api.github.com/users';
+
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', (event) =>{
+    event.preventDefault();
+});
