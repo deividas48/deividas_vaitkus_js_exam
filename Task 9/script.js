@@ -20,3 +20,6 @@ class Movie {
     return this.budget > 100000000;
   }
 }
+
+const MovieClass = new Movie("test", "test", 1000999999000);
+console.log(MovieClass.wasExpensive());
