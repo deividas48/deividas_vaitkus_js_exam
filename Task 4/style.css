@@ -27,3 +27,23 @@
   margin-top: 50px;
   color: #333;
 }
+
+#output {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.carCard {
+  background-color: #f4f4f4;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  width: 8rem;
+  overflow: auto;
+}
+
+.carCard ul {
+  list-style-type: none;
+}
